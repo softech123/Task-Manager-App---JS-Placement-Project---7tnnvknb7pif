@@ -1,1 +1,55 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+   
+}
+main.parent {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    overflow-y: hidden;
 
+}
+.list{
+    justify-self: auto;
+}
+
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+.main > section {
+    padding: 1rem;
+    display: flex;
+    width: 240px;
+    background-color: white;
+    border-radius: 8px;
+    justify-content: start;
+    flex-flow: column;
+    height: 300px;
+overflow: auto;}
+form.task-field {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+.open ul.list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.open ul.list > li {
+    margin: 0.4rem;
+}
+.remove{
+    width: 44px;
+    height: 37px;
+    justify-content: center;
+  /* align-self: flex-end;*/
+}
