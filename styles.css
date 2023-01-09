@@ -1,28 +1,35 @@
-*{
-    
+* {
+
     padding: 0;
     margin: 0;
-   
+
 }
+
+.taskInput {
+    border-radius: 5px;
+    height: 40px;
+}
+
 main.parent {
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
+    background-color: darksalmon;
     overflow-y: hidden;
-
 }
-.list{
+
+.list {
     justify-self: auto;
 }
 
 
-.main{
+.main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 2rem;
 }
-.main > section {
+
+.main>div {
     padding: 1rem;
     display: flex;
     width: 240px;
@@ -31,25 +38,93 @@ main.parent {
     justify-content: start;
     flex-flow: column;
     height: 300px;
-overflow: auto;}
+
+    overflow: auto;
+}
+
 form.task-field {
     margin-top: 2rem;
     text-align: center;
     padding: 1rem;
+    border-radius: 5px;
 }
+
 .open ul.list {
     width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
-    
+
 }
-.open ul.list > li {
+
+.open ul.list>li {
     margin: 0.4rem;
 }
-.remove{
+
+.remove {
     width: 44px;
     height: 37px;
     justify-content: center;
-  /* align-self: flex-end;*/
+
+}
+
+#card-contents {
+    width: auto;
+    height: auto;
+    padding: 12px;
+    padding-bottom: 150px;
+
+}
+
+.submit {
+    border-radius: 5px;
+    border-color: blueviolet;
+    background-color: gray;
+    height: 30px
+}
+
+.size {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.task {
+    font-size: 25px;
+    border: 5px;
+}
+
+.textfield {
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.deletebutton {
+    background-color: rgb(218, 89, 89);
+    border: none;
+    border-radius: 10px;
+    color: azure;
+    padding: 5px;
+    width: 80px;
+    margin-left: 40px
+}
+
+.task-heading,
+.task-body {
+    padding-bottom: 10px;
+    border: 2px;
+
+}
+
+.task {
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}
+
+.manager {
+    margin-bottom: 20PX;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

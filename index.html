@@ -7,39 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="App.js" defer></script>
+
 </head>
 
 <body>
 
     <main class="parent">
+
         <form class="task-field">
+            <h1 class="manager">TASK MANAGER</h1>
             <input type="text" placeholder="Enter a task" class="taskInput">
+
             <button class="submit">Add to list</button>
+            <div>
+
+                <textarea id="taskdescription" rows="5" cols="20" class='textfield'
+                    placeholder="Add Task Description Here"></textarea>
+            </div>
         </form>
 
 
-        <section class="main">
-            <section class="open" class="open" >
-                <h4 >OPEN</h4>
-               <div class="one"><ul class="list" ></ul></div> 
-                <button class="remove">Delete Tasks</button>
-            </section>
-            <section class="in_progress" >
-                <h4 >IN PROGRESS</h4>
-                <ul class="one"></ul>
-            </section>
-            <section class="in_review" >
-                <h4 >IN REVIEW</h4>
-                <ul class="one"></ul>
-            </section>
-            <section class="done" >
-                <h4 >DONE</h4>
-                <ul class="one"></ul>
-            </section>
-        </section>
 
-</main>
+        <section class="main">
+            <div class="status">
+                <div class="size">OPEN</div>
+                <div class="list" id="card-contents" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            </div>
+
+            <div class="status">
+                <div class="size">IN PROGRESS</div>
+                <div id="card-contents" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+
+            </div>
+
+            <div class="status">
+                <div class="size">IN REVIEW</div>
+                <div id="card-contents" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+            </div>
+
+            <div class="status">
+                <div class="size">DONE</div>
+                <div id="card-contents" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="App.js" defer></script>
 </body>
 
 </html>
