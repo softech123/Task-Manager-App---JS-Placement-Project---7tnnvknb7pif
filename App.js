@@ -53,7 +53,7 @@ function addTask(e) {
     let taskBody = document.createElement("div");
     taskBody.classList.add("task-body");
 
-    taskBody.textContent = taskDesc.value;
+    taskBody.textContent = "Description - " + taskDesc.value;
     taskDesc.value = "";
 
     let delbtn = document.createElement("button")
